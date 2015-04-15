@@ -1,2 +1,3 @@
-# phonegap-boilerplate-documentation
-Documentation for Phonegap Boilerplate : https://github.com/dorian-marchal/phonegap-boilerplate
+# Phonegap Boilerplate Documentation
+
+This repo is available as a gitbook at this address : 
