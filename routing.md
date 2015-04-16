@@ -33,7 +33,7 @@ v
 
 Layout
 |
-|- After the slide transition, the `page.transitionEnd` method is called
+|- After the slide transition, the `page.afterRender` method is called
 ```
 
 __Exemple :__
@@ -86,11 +86,20 @@ __Exemple :__
    - Slide the layout element as a new page : `pageSlider.slidePage(layout.$el)`
    - Delegate the layout and page events
 
-3. The layout is rendered
+3. page.beforeRender
+
+   The page.beforeRender method is called with the route params in parameters.
+   For example, the route #contact/show/14 could call the method.
+
+   ```js
+   contactForm.beforeRender(14);
+   ```
+
+4. The layout is rendered
 
    The layout, its subviews and the Page are rendered.
 
-4. page.transitionEnd
+5. page.afterRender
 
-   Once the transition is ended (or immediatly, if this is the first loaded page), the `page.transitionEnd` method is called.
+   Once the transition is ended (or immediatly, if this is the first loaded page), the `page.afterRender` method is called.
    This method is useful to execute some code after the rendering, without interrupting the transition.

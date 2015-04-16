@@ -38,6 +38,9 @@ To add a new page to your application, you must follow these steps :
                this.tpl = _.template(template);
            },
 
+           // Called before page slide with route params in parameters
+           beforeRender: function() {},
+
            // Called each time the page is displayed
            render: function () {
                this.$el.html(this.tpl());
@@ -45,7 +48,7 @@ To add a new page to your application, you must follow these steps :
            },
 
            // Called  right after the page transition
-           transitionEnd: function() {}
+           afterRender: function() {},
 
        });
    });
