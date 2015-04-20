@@ -34,6 +34,13 @@ git checkout dev
 git merge pb-core -m 'Use Phonegap Boilerplate'
 ```
 
+- Init and update submodules
+
+```bash
+git submodule init
+git submodule update
+```
+
 - Set up the dev environment
 
 ```bash
@@ -61,8 +68,8 @@ g c --allow-empty -m "Let's go !"
 
 ```bash
 # Let's say we want a `dev` branch
-git symbolic-ref HEAD refs/heads/dev
-git remote add pb-core git@github.com:dorian-marchal/phonegap-boilerplate-server.git
+git checkout -b dev
+git remote add pb-core git@github.com:dorian-marchal/phonegap-boilerplate.git
 git checkout -b pb-core
 # We will pull the master branch.
 # You may want to pull dev if you want newer changes
@@ -74,6 +81,13 @@ git pull --rebase pb-core master
 ```bash
 git checkout dev
 git merge pb-core -m 'Use Phonegap Boilerplate Server'
+```
+
+- Init and update submodules
+
+```bash
+git submodule init
+git submodule update
 ```
 
 - Set up the dev environment
