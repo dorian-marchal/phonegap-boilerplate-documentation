@@ -69,7 +69,7 @@ g c --allow-empty -m "Let's go !"
 ```bash
 # Let's say we want a `dev` branch
 git checkout -b dev
-git remote add pb-core git@github.com:dorian-marchal/phonegap-boilerplate.git
+git remote add pb-core git@github.com:dorian-marchal/phonegap-boilerplate-server.git
 git checkout -b pb-core
 # We will pull the master branch.
 # You may want to pull dev if you want newer changes
