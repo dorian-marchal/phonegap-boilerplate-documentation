@@ -18,11 +18,11 @@ To add a new page to your application, you must follow these steps :
    ],function ($, _, AppPage, template) {
        'use strict';
 
-       // A page inherit ApPage
+       // A page inherit AppPage
        return AppPage.extend({
 
            // Used in controller configuration
-           name: 'nextPage',
+           name: 'home',
 
            // A class added to the view element
            className: 'container',
@@ -53,8 +53,20 @@ To add a new page to your application, you must follow these steps :
        });
    });
    ```
-2.
 
-- template / tpl
-- subviews
-- options
+2. Add the page to the controller
+
+   ```js
+    usePages: [
+        ...
+        require('app/views/Home'),
+    ],
+
+    pageForActions: {
+        home: {
+            page: 'home',
+            layout: 'layout',
+        },
+        ...
+    },
+   ```
