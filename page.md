@@ -39,7 +39,7 @@ To add a new page to your application, you must follow these steps :
            },
 
            // Called before page slide with route params in parameters
-           beforeRender: function() {},
+           beforeLoad: function() {},
 
            // Called each time the page is displayed
            render: function () {
@@ -48,7 +48,7 @@ To add a new page to your application, you must follow these steps :
            },
 
            // Called  right after the page transition
-           afterRender: function() {},
+           afterLoad: function() {},
 
        });
    });

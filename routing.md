@@ -33,7 +33,7 @@ v
 
 Layout
 |
-|- After the slide transition, the `page.afterRender` method is called
+|- After the slide transition, the `page.afterLoad` method is called
 ```
 
 __Exemple :__
@@ -46,23 +46,23 @@ __Exemple :__
        ContactController,
    ],
    ```
- 
+
    ```js
    // In the ContactController :
    name: 'contact', // used in the route
-   
+
    // At Controller init, a new Layout instance will be added to the
    // "layouts" Controller property
    useLayouts: [
        require('app/views/Layout'),
    ],
- 
+
    // At Controller init, a new Show instance will be added to the
    // "pages" Controller property
    usePages: [
        require('app/views/Show'),
    ],
- 
+
    // Pages in "layoutForPages" are automatically associated with
    // their layout. For example, here, this action is created :
    // ContactController.show: function() {
@@ -86,20 +86,20 @@ __Exemple :__
    - Slide the layout element as a new page : `pageSlider.slidePage(layout.$el)`
    - Delegate the layout and page events
 
-3. page.beforeRender
+3. page.beforeLoad
 
-   The page.beforeRender method is called with the route params in parameters.
+   The page.beforeLoad method is called with the route params in parameters.
    For example, the route #contact/show/14 could call the method.
 
    ```js
-   contactForm.beforeRender(14);
+   contactForm.beforeLoad(14);
    ```
 
 4. The layout is rendered
 
    The layout, its subviews and the Page are rendered.
 
-5. page.afterRender
+5. page.afterLoad
 
-   Once the transition is ended (or immediatly, if this is the first loaded page), the `page.afterRender` method is called.
+   Once the transition is ended (or immediatly, if this is the first loaded page), the `page.afterLoad` method is called.
    This method is useful to execute some code after the rendering, without interrupting the transition.
