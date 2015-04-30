@@ -41,6 +41,12 @@ To add a new page to your application, you must follow these steps :
            // Called before page slide with route params in parameters
            beforeLoad: function() {},
 
+           /**
+            * Called after the page has been added to the DOM
+            * And juste before the page transition
+            */
+           afterRender: function() {},
+
            // Called each time the page is displayed
            render: function () {
                this.$el.html(this.tpl());

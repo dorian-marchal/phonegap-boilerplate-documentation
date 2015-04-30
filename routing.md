@@ -96,10 +96,13 @@ __Exemple :__
    ```
 
 4. The layout is rendered
+   The layout, its subviews and the Page are rendered and the page is added to the DOM.
 
-   The layout, its subviews and the Page are rendered.
+5. page.afterRender
 
-5. page.afterLoad
+   Just after that the page has been added to the DOM, this method is called.
+
+6. page.afterLoad
 
    Once the transition is ended (or immediatly, if this is the first loaded page), the `page.afterLoad` method is called.
    This method is useful to execute some code after the rendering, without interrupting the transition.
