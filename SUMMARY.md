@@ -9,6 +9,7 @@ Documentation of Phonegap Boilerplate : https://github.com/dorian-marchal/phoneg
     + [Configure a Layout](layout.md)
     + [Add a Page](page.md)
     + [`globals` singleton](globals.md)
+    + [Fixed positioned elements](fixed-elements.md)
 - [Internationalization](i18n.md)
 - [Authentication](auth.md)
 - [Generating an icon/splashscreen](icon.md)
