@@ -22,4 +22,4 @@ of two things :
    The `data-fixed` attribute works just like that : add  `data-fixed="absolute"`
    on your fixed elements and they will follow their parent.
 
-[page-slider]: https://github.com/dorian-marchal/phonegap-boilerplate/blob/master/www/js/core/utils/PageSlider.js
+[page-slider]: https://github.com/dorian-marchal/page-slider
