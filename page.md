@@ -38,14 +38,15 @@ To add a new page to your application, you must follow these steps :
                this.tpl = _.template(template);
            },
 
-           // Called before page slide with route params in parameters
-           beforeLoad: function() {},
+           // Called before page slide with an object in parameters
+           // See the routing documentation for more infos (routing.md)
+           beforeLoad: function () {},
 
            /**
             * Called after the page has been added to the DOM
             * And juste before the page transition
             */
-           afterRender: function() {},
+           afterRender: function () {},
 
            // Called each time the page is displayed
            render: function () {

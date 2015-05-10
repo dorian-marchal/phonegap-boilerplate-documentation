@@ -88,12 +88,22 @@ __Exemple :__
 
 3. page.beforeLoad
 
-   The page.beforeLoad method is called with the route params in parameters.
+   The page.beforeLoad method is called with an object containing the action
+   arguments and a page history string in parameters.
    For example, the route #contact/show/14 could call the method.
 
    ```js
-   contactForm.beforeLoad(14);
+   contactForm.beforeLoad({
+       actionArguments: 14,
+       history: 'forward'
+   });
    ```
+
+   `history` can be :
+   - 'first' if the page is the first one slided
+   - 'forward' if the page come from the right
+   - 'back' if the page come from the left
+
 
 4. The layout is rendered
    The layout, its subviews and the Page are rendered and the page is added to the DOM.
