@@ -86,7 +86,7 @@ __Exemple :__
    - Slide the layout element as a new page : `pageSlider.slidePage(layout.$el)`
    - Delegate the layout and page events
 
-3. page.beforeLoad
+3. `page.beforeLoad`
 
    The page.beforeLoad method is called with an object containing the action
    arguments and a page history string in parameters.
@@ -106,13 +106,19 @@ __Exemple :__
 
 
 4. The layout is rendered
+
    The layout, its subviews and the Page are rendered and the page is added to the DOM.
 
-5. page.afterRender
+5. `page.afterRender`
 
    Just after that the page has been added to the DOM, this method is called.
 
-6. page.afterLoad
+6. `previousPage.beforeLeave`
+
+   Just before the actual sliding transition, `beforeLeave` is called.
+   It can be useful to free some ressources. 
+
+7. `page.afterLoad`
 
    Once the transition is ended (or immediatly, if this is the first loaded page), the `page.afterLoad` method is called.
    This method is useful to execute some code after the rendering, without interrupting the transition.

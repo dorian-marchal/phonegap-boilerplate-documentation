@@ -57,6 +57,12 @@ To add a new page to your application, you must follow these steps :
            // Called  right after the page transition
            afterLoad: function() {},
 
+           /**
+            * Called just before the page slide out
+            * (just after newPage.afterRender)
+            */
+           beforeLeave: function () {},
+
        });
    });
    ```
