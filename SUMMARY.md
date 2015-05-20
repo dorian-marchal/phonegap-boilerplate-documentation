@@ -13,4 +13,5 @@ Documentation of Phonegap Boilerplate : https://github.com/dorian-marchal/phoneg
 - [Internationalization](i18n.md)
 - [Authentication](auth.md)
 - [Generating an icon/splashscreen](icon.md)
+- [Adding maps](maps.md)
 - [Add a dependency to your app](dependency.md)
