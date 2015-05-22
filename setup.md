@@ -43,6 +43,10 @@ git checkout dev
 git merge pb-core -m 'Use Phonegap Boilerplate'
 ```
 
+Note : use `gulp live`, from the project root, to run :
+- _LiveReload_ : Reload your browser on edit.
+- _LiveCompass_ : Compile your sass files on save.
+
 __After creating or cloning a project :__
 
 - Init and update submodules
