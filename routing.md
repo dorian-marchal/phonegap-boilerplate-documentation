@@ -80,7 +80,7 @@ __Exemple :__
 2. The router calls the method `ContactController.show(14)`
 
    In this case, the action parameter ( `14`) is useless, but the route params are also available in the `route` property of the `globals` singleton.
-   Since it has not been overrided, the action do the following :
+   Since it has not been overriden, the action do the following :
    - Set the content view of the layout with `layout.setPage()`
    - Render the layout : `layout.render()`
    - Slide the layout element as a new page : `pageSlider.slidePage(layout.$el)`
@@ -111,14 +111,14 @@ __Exemple :__
 
 5. `page.afterRender`
 
-   Just after that the page has been added to the DOM, this method is called.
+   Just after the page has been added to the DOM, this method is called.
 
 6. `previousPage.beforeLeave`
 
    Just before the actual sliding transition, `beforeLeave` is called.
-   It can be useful to free some ressources. 
+   It can be useful to free some ressources.
 
 7. `page.afterLoad`
 
-   Once the transition is ended (or immediatly, if this is the first loaded page), the `page.afterLoad` method is called.
+   Once the transition end (or immediatly, if this is the first loaded page), the `page.afterLoad` method is called.
    This method is useful to execute some code after the rendering, without interrupting the transition.
