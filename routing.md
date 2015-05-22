@@ -1,11 +1,15 @@
 # Routing
 
+*__Note :__ if you want more informations on router configuration, see the [router documentation](router.md)*
+
+---
+
 Default routing works this way :
 
 ```
 Router
 |
-|- Detect #hash change
+|- Detect #hash change (or first #hash, at init)
 |- Store `controller`, `action` and `params` in
      the `route` property of the `globals` singleton.
 |- Pass the request to the proper controller/action with given parameters
@@ -23,17 +27,23 @@ Layout
 |
 |- `Layout.defaultOptions` properties are overriden by
      `Page.layoutOptions` if needed
-|- Render with its `Page` and `subviews` as content
+|- Render with its `Page` and `subviews` in <section class="content">
 v
 
-PageSlider
+PageSlider / Layout
 |
-|- Slide the layout rendered element as a new page
+|- Slide the AppLayout rendered element as a new page
 v
 
-Layout
+Layout / Page
 |
-|- After the slide transition, the `page.afterLoad` method is called
+|- The new page is slided in :
+|  -> newPage.beforeLoad()
+|  -> newPage.render() : *Render the newPage in the DOM*
+|  -> newPage.afterRender()
+|  -> oldPage.beforeLeave()
+|  *Actual page sliding transition*
+|  -> newPage.afterLoad()
 ```
 
 __Exemple :__
@@ -104,10 +114,11 @@ __Exemple :__
    - 'forward' if the page come from the right
    - 'back' if the page come from the left
 
-
 4. The layout is rendered
 
    The layout, its subviews and the Page are rendered and the page is added to the DOM.
+
+   You can read the [layout documentation, here](layout.md)
 
 5. `page.afterRender`
 
