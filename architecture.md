@@ -66,7 +66,7 @@ The routing logic can be found [here ↱](routing.md) (you can also read the [ro
 
 ### Config details
 
-The configuration of an app is based on 3 files, loaded in the following order (The last can override the previous one, wich can override the first one) :
+The configuration of an app is based on three files, loaded in the following order (The last can override the previous one, wich can override the first one) :
 
 - `www/js/core/core-require-conf.js` : The configuration file of Phonegap Boilerplate. This file must not be edited.
 - `www/js/core.js` : The core file of your app. It is used to adjust Phonegap Boilerplate to your needs and alias your dependencies.
