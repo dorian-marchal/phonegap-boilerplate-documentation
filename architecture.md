@@ -2,7 +2,7 @@
 
 ## Directory Tree
 
-The app web route is `www` :
+The app web root is `www` :
 
 ```
 www
@@ -25,7 +25,7 @@ www
  |
  |- locales/    Internationalization files (see  'Internationalization')
  |
- |- res/        Icon and splashscreen source (see 'Generating  an icon/splashscreen')
+ |- res/        Icon and splashscreen source (see 'Generating an icon/splashscreen')
  |
  `- spec/       Phonegap test suit
 ```
@@ -46,19 +46,19 @@ This file is an entry point responsible for setting up the app architecture.
 
 __It goes like this :__
 
-- Config loading ([:point_down: see config details](#config-details))
-- Cordova loading ([:point_down: more informations](#cordova-mocking))
+- Config loading ([↓ see config details](#config-details))
+- Cordova loading ([↓ more informations](#cordova-mocking))
 - Language initialization (from device)
-- [:point_down: Init hook](#init-hook)
-- Authentication checking ([Go to the authentication doc :arrow_heading_up:](auth.md))
-- Create the `globals` singleton ([see globals documentation  :arrow_heading_up:](globals.md))
-- Router creation ([Go to the routing doc :arrow_heading_up:](routing.md))
+- [↓ init hook](#init-hook)
+- Authentication checking ([Go to the authentication doc ↱](auth.md))
+- Create the `globals` singleton ([See globals documentation  ↱](globals.md))
+- Router creation ([Go to the routing doc ↱](routing.md))
 - App start-up : `js/app/router.js`
 
 ### 3. First page loading
 
 The router (`js/app/router.js`) determines the page to load based on the current url `#hash`.  
-The routing logic can be found [here :arrow_heading_up:](routing.md) (you can also read the [router configuration :arrow_heading_up:](router.md))
+The routing logic can be found [here ↱](routing.md) (you can also read the [router configuration ↱](router.md))
 
 ---
 
