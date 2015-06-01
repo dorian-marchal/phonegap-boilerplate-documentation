@@ -75,7 +75,6 @@ To authenticate a user, use the `authenticate` middleware :
 ```js
 server.app.get('/my-route', server.authenticate, function (req, res) {
     // If req.user is available, the user is authentified
-    // Otherwise, the user get a 401 error
 });
 ```
 
@@ -86,6 +85,7 @@ If you want your route to be only accessible to authentified users, use the `req
 ```js
 server.app.get('/my-route', server.requireAuthentication, function (req, res) {
     // This method is called if the user is authentified
+    // Otherwise, the user get a 401 error
 });
 ```
 
