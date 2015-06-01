@@ -37,7 +37,8 @@ auth.findUserByToken = function(token, done) {
     // Error
     done('Error description');
 
-    // Success (user found)
+    // Success (the user is returned if found)
+    // /!\ Important, the returned user must have a 'token' property.
     done(null, user);
 };
 ```
@@ -50,6 +51,7 @@ auth.findUserByUsernameAndPassword = function(username, password, done) {
     done('Error description');
 
     // User found
+    // /!\ Important, the returned user must have a 'token' property.
     done(null, user);
 };
 ```
@@ -65,6 +67,28 @@ auth.updateUserToken = function(user, token, done) {
     done();
 };
 ```
+
+__Authenticate a user :__
+
+To authenticate a user, use the `authenticate` middleware :
+
+```js
+server.app.get('/my-route', server.authenticate, function (req, res) {
+    // If req.user is available, the user is authentified
+    // Otherwise, the user get a 401 error
+});
+```
+
+__Require authentication :__
+
+If you want your route to be only accessible to authentified users, use the `requireAuthentication` middleware :
+
+```js
+server.app.get('/my-route', server.requireAuthentication, function (req, res) {
+    // This method is called if the user is authentified
+});
+```
+
 
 ### Client : Usage and set up
 
