@@ -106,6 +106,8 @@ An access token will automatically be added in each GET/POST request.
 
 To check if a user is logged in, use the property : `auth.loggedIn`.
 
+Later, you can access user information via `auth.user`.
+
 Finally, to log out a user, use :
 
 ```js
