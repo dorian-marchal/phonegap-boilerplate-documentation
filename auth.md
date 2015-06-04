@@ -64,6 +64,8 @@ auth.updateUserToken = function(user, token, done) {
     done('Error description');
 
     // Success
+    // If for some reason, you want to override the generated token, you can pass
+    // the new token as the second parameter to the done callback.
     done();
 };
 ```
