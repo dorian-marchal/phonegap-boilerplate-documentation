@@ -12,6 +12,7 @@ Documentation of Phonegap Boilerplate : https://github.com/dorian-marchal/phoneg
     + [`globals` singleton](globals.md)
 - [Authentication](auth.md)
 - [Internationalization](i18n.md)
+- [Geolocation](geolocation.md)
 - [Generating an icon/splashscreen](icon.md)
 - [Fixed positioned elements](fixed-elements.md)
 - [Adding maps](maps.md)
