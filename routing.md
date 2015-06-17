@@ -38,10 +38,10 @@ v
 Layout / Page
 |
 |- The new page is slided in :
+|  -> oldPage.beforeLeave()
 |  -> newPage.beforeLoad()
 |  -> newPage.render() : *Render the newPage in the DOM*
 |  -> newPage.afterRender()
-|  -> oldPage.beforeLeave()
 |  *Actual page sliding transition*
 |  -> newPage.afterLoad()
 ```
@@ -96,7 +96,12 @@ __Exemple :__
    - Slide the layout element as a new page : `pageSlider.slidePage(layout.$el)`
    - Delegate the layout and page events
 
-3. `page.beforeLoad`
+3. `previousPage.beforeLeave`
+
+   Just before the page loading `beforeLeave` is called. It can be useful to free some ressources.
+
+
+4. `page.beforeLoad`
 
    The page.beforeLoad method is called with an object containing the action
    arguments and a page history string in parameters.
@@ -114,20 +119,15 @@ __Exemple :__
    - 'forward' if the page come from the right
    - 'back' if the page come from the left
 
-4. The layout is rendered
+5. The layout is rendered
 
    The layout, its subviews and the Page are rendered and the page is added to the DOM.
 
    You can read the [layout documentation, here](layout.md)
 
-5. `page.afterRender`
+6. `page.afterRender`
 
    Just after the page has been added to the DOM, this method is called.
-
-6. `previousPage.beforeLeave`
-
-   Just before the actual sliding transition, `beforeLeave` is called.
-   It can be useful to free some ressources.
 
 7. `page.afterLoad`
 
