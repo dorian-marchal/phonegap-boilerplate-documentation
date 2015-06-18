@@ -15,6 +15,7 @@ Documentation of Phonegap Boilerplate : https://github.com/dorian-marchal/phoneg
 - [Geolocation](geolocation.md)
 - [Generating an icon/splashscreen](icon.md)
 - [Fixed positioned elements](fixed-elements.md)
+- [Active state of interactive elements](interaction.md)
 - [Adding maps](maps.md)
 - [Backbutton behavior](backbutton.md)
 - [Add a dependency to your app](dependency.md)
