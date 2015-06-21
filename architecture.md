@@ -90,3 +90,15 @@ mock the Cordova API and plugins.
 ### Init hook
 
 If you want to add some code that will be executed before the app start, you can add it in `www/js/app/initHook.js`. The function returned by this module is called before the splashscreen is hidden.
+
+`initHook` is asynchronous, so you must call its callback when you're done :
+
+```js
+return function (done) {
+
+    // Code executed at start-up
+    // ...
+
+    done();
+};
+```
