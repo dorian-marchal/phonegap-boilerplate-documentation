@@ -76,17 +76,17 @@ To authenticate a user, use the `authenticate` middleware :
 
 ```js
 server.app.get('/my-route', server.authenticate, function (req, res) {
-    // If req.user is available, the user is authentified
+    // If req.user is available, the user is authenticated
 });
 ```
 
 __Require authentication :__
 
-If you want your route to be only accessible to authentified users, use the `requireAuthentication` middleware :
+If you want your route to be only accessible to authenticated users, use the `requireAuthentication` middleware :
 
 ```js
 server.app.get('/my-route', server.requireAuthentication, function (req, res) {
-    // This method is called if the user is authentified
+    // This method is called if the user is authenticated
     // Otherwise, the user get a 401 error
 });
 ```
@@ -113,6 +113,22 @@ Finally, to log out a user, use :
 ```js
 auth.logout(callback)
 ```
+
+When the user is authenticated, his token is automatically passed in all the HTTP requests made with the API Helper :
+
+```js
+define(['app/singletons/api'], function (api) {
+
+    // If the user is authenticated, this send a HTTP request on
+    // host:port/my-route with the following query string :
+    // myParameter=toast&access_token=<user-token>
+    api.get('/my-route', {
+        data: {
+            myParameter: 'toast',
+        }
+    });
+})
+
 
 ### Based on
 
