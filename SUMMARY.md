@@ -19,4 +19,5 @@ Documentation of Phonegap Boilerplate : https://github.com/dorian-marchal/phoneg
 - [Adding maps](maps.md)
 - [Backbutton behavior](backbutton.md)
 - [Add a dependency to your app](dependency.md)
+- [Server API Caching](caching.md)
 - [Build the app for distribution](build.md)
