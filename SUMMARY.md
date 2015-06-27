@@ -32,3 +32,4 @@ Documentation of Phonegap Boilerplate : https://github.com/dorian-marchal/phoneg
     + [core/views/AppView](api/AppView.md)
     + [core/views/AppLayout](api/AppLayout.md)
     + [core/views/AppPage](api/AppPage.md)
+    + [core/singletons/backbuttonManager](api/backbuttonManager.md)

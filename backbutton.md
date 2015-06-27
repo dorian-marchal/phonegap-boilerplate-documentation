@@ -3,7 +3,7 @@
 Phonegap let you override the default backbutton behaviour by listening to the
 'backbutton' event. Unfortunately, there can be only one bound callback.
 
-To get around this, Phonegap Boilerplate provide a backbutton manager.
+To get around this, Phonegap Boilerplate provide a [backbuttonManager](api/backbuttonManager.md).
 
 ### backbuttonManager
 
