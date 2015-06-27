@@ -22,6 +22,7 @@ Documentation of Phonegap Boilerplate : https://github.com/dorian-marchal/phoneg
 - [Server API Caching](caching.md)
 - [Build the app for distribution](build.md)
 - API Documentation
+    - [core/AppController](api/AppController.md)
     - [core/utils/GeolocationHelper](api/GeolocationHelper.md)
     - [core/utils/ApiHelper](api/ApiHelper.md)
     - [core/models/AppCollection](api/AppCollection.md)
