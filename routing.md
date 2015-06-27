@@ -1,6 +1,6 @@
 # Routing
 
-*__Note :__ if you want more informations on router configuration, see the [router documentation](router.md)*
+*__Note :__ if you want more informations on router configuration, see the [router documentation](router.md) and [AppRouter](api/AppRouter.md)*
 
 ---
 
@@ -109,7 +109,7 @@ __Exemple :__
 
    ```js
    contactForm.beforeLoad({
-       actionArguments: 14,
+       actionArguments: [ 14 ],
        history: 'forward'
    });
    ```

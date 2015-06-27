@@ -2,7 +2,7 @@
 
 __Default route:__
 
-The router manages a default route : `controllerName/action/param1/param2/...`.
+The router ([AppRouter](api/AppRouter.md)) manages a default route : `controllerName/action/param1/param2/...`.
 
 This route calls `router.callAction(controllerName, action, params)` who calls the `action` method of the Controller with the name property equals to `controllerName` if it exists.
 If there is no action in the route (for example, `#contact`), the `index` action is called.

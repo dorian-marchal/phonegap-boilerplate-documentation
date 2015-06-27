@@ -4,8 +4,8 @@ To add a new page to your application, you must follow these steps :
 
 1. Create the page view and the template
 
-   Page views are `Backbone.Views` that inherit `AppPage` and are located in `app/views`.
-   A page is often associated with a template located in `app/templates`
+   Page views are `Backbone.Views` that inherit [AppPage](api/AppPage.md) and are located in `app/views`.
+   A page is associated with a template located in `app/templates`
 
    Example (`app/views/Home.js`) :
 
