@@ -1,6 +1,6 @@
 ## Configure a Layout
 
-Layouts inherit the `AppLayout` class.
+Layouts inherit the [AppLayout](api/AppLayout.md) class.
 
 A layout is associated with a template and looks like that :
 
