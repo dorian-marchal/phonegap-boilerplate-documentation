@@ -1,5 +1,12 @@
-# AppCollection
+# Global
 
+
+
+
+
+* * *
+
+## Class: AppCollection
 A base collection.
 All the app collections must inherit from this.
 The general code of the collections goes here.
@@ -20,9 +27,8 @@ define([
 });
 ```
 
-
-
-* * *
+**route**: `String` , The API route
+**model**: `AppModel` , Model in the collection
 
 
 * * *
