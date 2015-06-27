@@ -1,6 +1,6 @@
 # Generating an icon/splashscreen
 
-Phonegap Boilerplate allow easy customization of app icon and splashscreen.
+Phonegap Boilerplate allows easy customization of app icon and splashscreen.
 
 To change your app icon/splashscreen, you must add :
 - `resources/icon.png` (1024 x 1024)

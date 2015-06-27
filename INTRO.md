@@ -14,6 +14,8 @@ __Client side:__
 
 __Server side:__
 
+- Node
 - Express
 - Passport
 - Mongoose
+- Bookshelf

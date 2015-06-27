@@ -1,11 +1,11 @@
 ## Configure a Controller
 
 Controller methods (actions) are meant to be called directly by the router.
-A controller makes the connection between a [`Layout`](layout.md) and a `Page`.
+A controller makes the connection between a [`Layout`](layout.md) and an [AppPage](api/AppPage.md).
 
 __Add a controller:__
 
-Controllers must be created in `app/controllers` directory. A controller looks like that :
+Controllers must be created in `app/controllers` directory. A controller inherit [AppController](api/AppController.md) and looks like that :
 
 ```js
 define(function(require) {
@@ -29,7 +29,7 @@ define(function(require) {
             require('app/views/NextPage'),
             require('app/views/Map'),
         ],
-        
+
 
         // Define a Layout/Page couple for each action
         // The strings used for the 'page' and 'layout' properties

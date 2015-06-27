@@ -1,6 +1,6 @@
 # Routing
 
-*__Note :__ if you want more informations on router configuration, see the [router documentation](router.md) and [AppRouter](api/AppRouter.md)*
+*__Note :__ if you want more informations on router configuration, see the [router documentation](router.md) and [the AppRouter class](api/AppRouter.md)*
 
 ---
 

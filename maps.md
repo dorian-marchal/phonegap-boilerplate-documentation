@@ -1,6 +1,6 @@
 # Adding maps
 
-Phonegap Boilerplate provide some helpers to easily add Google Maps in your app pages.
+Phonegap Boilerplate provides some helpers to easily add Google Maps in your app pages.
 
 
 ### Gmaps : `gmaps`
@@ -13,7 +13,7 @@ When `gmaps` is required, Google Maps is available via the `google.maps` global.
 
 ### Geolocation : `core/utils/GeolocationHelper`
 
-An helper is available to ease user geolocation. An instance of this helper can be required via the `app/singletons/geolocation` module.
+The [GeolocationHelper](api/GeolocationHelper.md) is available to ease user geolocation. An instance of this helper can be required via the `app/singletons/geolocation` module.
 
 
 ### User tracking : `core/utils/UserLocationTracker`

@@ -2,7 +2,7 @@
 
 ## Directory Tree
 
-The app web root is `www` :
+The app webroot is `www` :
 
 ```
 www

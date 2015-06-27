@@ -2,7 +2,7 @@
 
 #### Requirements
 
-- A global installation of `phonegap` (tested with version `4.2.0-0.25.0`)
+- A global installation of `phonegap` (tested with versions `4.2` to `5.1`)
 - A global installation of `node` (or `io`)
 - A global installation of `gulp`
 

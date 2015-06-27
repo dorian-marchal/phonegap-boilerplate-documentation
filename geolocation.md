@@ -7,7 +7,7 @@ your app.
 
 ### Geolocation : `core/utils/GeolocationHelper.js`
 
-`GeolocationHelper` lets you easily manage geolocation tracking. An instance is available globally via `app/singletons/geolocation.js`.
+[GeolocationHelper](api/GeolocationHelper.md) lets you easily manage geolocation tracking. An instance is available globally via `app/singletons/geolocation.js`.
 
 __Usage :__
 

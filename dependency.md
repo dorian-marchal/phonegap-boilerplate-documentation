@@ -7,7 +7,7 @@ Your app dependencies must be stored in `/www/js/lib` (js) and `/www/css/lib` (c
 Usually, dependencies are fetched with bower (in `/bower_components`) and added
 to the libs on build.
 
-For exemple, backbone is fetched with this command :
+For example, backbone is fetched with this command :
 
 ```bash
 bower install --save backbone
