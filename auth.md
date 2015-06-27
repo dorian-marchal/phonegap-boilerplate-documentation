@@ -114,7 +114,7 @@ Finally, to log out a user, use :
 auth.logout(callback)
 ```
 
-When the user is authenticated, his token is automatically passed in all the HTTP requests made with the API Helper :
+When the user is authenticated, his token is automatically passed in all the HTTP requests made with the [ApiHelper](api/ApiHelper.md) :
 
 ```js
 define(['app/singletons/api'], function (api) {
