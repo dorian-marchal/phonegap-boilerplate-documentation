@@ -55,7 +55,7 @@ GeolocationHelper.getDistanceBetween(pointA, pointB);
 
 ### User tracking : `core/utils/UserLocationTracker.js`
 
-`UserLocationTracker` lets you add a marker that follow the user on a map.
+[UserLocationTracker](api/UserLocationTracker) lets you add a marker that follow the user on a map.
 
 __Usage :__
 

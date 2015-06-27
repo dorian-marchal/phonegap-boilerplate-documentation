@@ -18,7 +18,7 @@ An helper is available to ease user geolocation. An instance of this helper can 
 
 ### User tracking : `core/utils/UserLocationTracker`
 
-`UserLocationTracker` is a helper used to track a user device and display its position on a map.
+[UserLocationTracker](api/UserLocationTracker) is a helper used to track a user device and display its position on a map.
 
 
 ### Based on
