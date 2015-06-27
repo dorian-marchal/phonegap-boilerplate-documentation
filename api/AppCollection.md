@@ -28,7 +28,9 @@ define([
 ```
 
 **route**: `String` , The API route
+<br>
 **model**: `AppModel` , Model in the collection
+<br>
 
 
 * * *

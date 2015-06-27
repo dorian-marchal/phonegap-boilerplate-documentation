@@ -25,6 +25,7 @@ define([
 ```
 
 **route**: `String` , The API route
+<br>
 
 
 * * *

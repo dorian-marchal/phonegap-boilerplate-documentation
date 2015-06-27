@@ -10,6 +10,7 @@
 Manage the user authentication.
 
 **loggedIn**: `Boolean` , true if the user is logged in
+<br>
 ### AuthHelper.AuthHelper(api) 
 
 Manage the user authentication.

@@ -13,8 +13,10 @@ The object from which all the app pages must inherit.
 Must be unique through your app.
 This property is used to identify the page in the controller
 Moreover, the name is added as a class on the .page
+<br>
 **layoutOptions**: `Object` , override the layout options
 Options passed to the layout
+<br>
 ### AppPage.onBackButton(done) 
 
 Called when the backbutton is pressed on the current page.

@@ -11,6 +11,7 @@ The object from wich the app router must inherit.
 Inherit Backbone.Router.
 
 **controllers**: `Object` , Required controllers
+<br>
 **routes**: `Object` , list of Backbone.Router.route bound to actions
 Can contain :controller, :action and *params.
 

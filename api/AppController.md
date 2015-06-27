@@ -43,8 +43,11 @@ define(function(require) {
 ```
 
 **useLayouts**: `Array` , Required layouts
+<br>
 **usePages**: `Array` , Required pages
+<br>
 **layoutForPages**: `Object` , Link between routes, pages and layouts.
+<br>
 
 
 * * *

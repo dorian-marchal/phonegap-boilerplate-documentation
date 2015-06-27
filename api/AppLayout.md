@@ -31,10 +31,12 @@ define(function (require) {
 ```
 
 **name**: `String` , A unique string to identify the layout in the controller.
+<br>
 **template**: `String` , Underscore template of the layout.
 This template must have an element with the class .content that
 will become the AppPage element node.
 It will be compiled to `this.tpl` at init.
+<br>
 **subviews**: `Object` , List of AppView that will be linked to the given selector.
 Example :
 
@@ -45,6 +47,7 @@ subviews: {
 }
 ```
 **defaultOptions**: `Object` , Default layout options that can be overriden by the pages
+<br>
 
 
 * * *
