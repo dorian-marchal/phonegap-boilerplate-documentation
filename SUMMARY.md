@@ -26,6 +26,7 @@ Documentation of Phonegap Boilerplate : https://github.com/dorian-marchal/phoneg
     + [core/AppController](api/AppController.md)
     + [core/utils/GeolocationHelper](api/GeolocationHelper.md)
     + [core/utils/ApiHelper](api/ApiHelper.md)
+    + [core/utils/AuthHelper](api/AuthHelper.md)
     + [core/models/AppModel](api/AppModel.md)
     + [core/models/AppCollection](api/AppCollection.md)
     + [core/views/AppView](api/AppView.md)
