@@ -25,6 +25,8 @@ in `www/index.html`, from `"dev"` to `"dist"`.
 
 __Note:__ If `isProductionConfig` is `false` or `window.environment` isn't set to `"dev"`, a warning will be displayed.
 
+![toast](https://cloud.githubusercontent.com/assets/6225979/8487822/c79f1d60-210e-11e5-9747-1b882a1d6418.png)
+
 This helps to avoid pushing a dev app on a store (as I once did... :no_mouth:).
 
 To disable this warning, set the `hideDistWarning` to `true` in your config file.
