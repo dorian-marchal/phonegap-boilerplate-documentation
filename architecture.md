@@ -49,6 +49,7 @@ __It goes like this :__
 - Config loading ([↓ see config details](#config-details))
 - Cordova loading ([↓ more informations](#cordova-mocking))
 - Language initialization (from device)
+- [↓ before init hook](#before-init-hook)
 - [↓ init hook](#init-hook)
 - Authentication checking ([Go to the authentication doc ↱](auth.md))
 - Create the `globals` singleton ([See globals documentation  ↱](globals.md))
@@ -87,9 +88,33 @@ When the app is loaded in the browser, the Cordova API is not available.
 To enable testing in the browser, a fake `cordova.js` file is loaded. This file
 mock the Cordova API and plugins.
 
+### Before init hook
+
+The `beforeInitHook` (`www/js/app/initHook.js`) is called just before initializing
+you app router, views, models, dependencies, ...
+A use case for this hook is editing the configuration before loading your app modules.
+
+For example, the `gmaps` dependency can only be resolve with an internet connection.
+In this case, you may want to add some code in the `beforeInitHook` to warn your users
+when there is no available connection.
+
+`beforeInitHook` is asynchronous, so you must call its callback when you're done :
+
+```js
+return function (done) {
+
+    // Code executed before init
+    // ...
+
+    done();
+};
+```
+
 ### Init hook
 
-If you want to add some code that will be executed before the app start, you can add it in `www/js/app/initHook.js`. The function returned by this module is called before the splashscreen is hidden.
+If you want to add some code that will be executed before the app start, but
+after your app modules are loaded, you can add it in `www/js/app/initHook.js`.
+The function returned by this module is called before the splashscreen is hidden.
 
 `initHook` is asynchronous, so you must call its callback when you're done :
 
