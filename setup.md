@@ -5,145 +5,22 @@
 - A global installation of `phonegap` (tested with versions `4.2` to `5.1`)
 - A global installation of `node` (or `io`)
 - A global installation of `gulp`
+- A global installation of `pb` (`npm install -g phonegap-boilerplate`)
 
 ---
 
-#### Client
+#### Creating a project
 
-__New Project :__
+use the `pb` CLI to create a project :
 
-- Create an empty repository for your project, clone it and add a commit to it
-
-```bash
-git clone <your-repo>
-cd <your-repo>
-g c --allow-empty -m "Let's go !"
+```
+pb create
 ```
 
-- Configure a `pb-core` branch following the evolution of Phonegap Boilerplate
-
-```bash
-# Let's say we want a `dev` branch
-git checkout -b dev
-
-# You may want to clone an other repo (your own mirror)
-git remote add pb-core https://github.com/dorian-marchal/phonegap-boilerplate
-
-git checkout -b pb-core
-
-# We will pull the master branch.
-# You may want to pull dev if you want newer changes
-git pull --rebase pb-core master
-```
-
-- Merge the core in your `dev` branch and start coding :)
-
-```bash
-git checkout dev
-git merge pb-core -m 'Use Phonegap Boilerplate'
-```
-
-Note : use `gulp live`, from the project root, to run :
-- _LiveReload_ : Reload your browser on edit.
-- _LiveCompass_ : Compile your sass files on save.
-
-__After creating or cloning a project :__
-
-- Init and update submodules
-
-```bash
-git submodule init
-git submodule update
-```
-
-- Set up the dev environment
-
-```bash
-make install-dev
-```
-
-- Duplicate and edit the default config file
-
-```bash
-cp www/js/config.js.default www/js/config.js
-nano www/js/config.js
-```
+Then, simply follow the instructions.
 
 ---
 
-#### Server (same steps)
+### Update the boilerplate
 
-__New Project :__
-
-- Create an empty repository for your project server, clone it and add a commit to it
-
-```bash
-git clone <your-repo>
-cd <your-repo>
-g c --allow-empty -m "Let's go !"
-```
-
-- Configure a `pb-core` branch representing the Phonegap Boilerplate Server
-
-```bash
-# Let's say we want a `dev` branch
-git checkout -b dev
-
-# You may want to clone an other repo (your own mirror)
-git remote add pb-core https://github.com/dorian-marchal/phonegap-boilerplate-server
-
-git checkout -b pb-core
-
-# We will pull the master branch.
-# You may want to pull dev if you want newer changes
-git pull --rebase pb-core master
-```
-
-- Merge the core in your `dev` branch and start coding :)
-
-```bash
-git checkout dev
-git merge pb-core -m 'Use Phonegap Boilerplate Server'
-```
-
-__After creating or cloning a project :__
-
-- Init and update submodules
-
-```bash
-git submodule init
-git submodule update
-```
-
-- Set up the dev environment
-
-```bash
-make install-dev
-```
-
-- Duplicate and edit the default config files
-
-```bash
-cp config.js.default config.js
-nano config.js
-```
-
----
-
-### Update the boilerplate (client and server)
-
-To update Phonegap Boilerplate, you must use the `pb` CLI included in this repo. For simpler usage, add `dev-scripts/cli` in your `PATH`.
-The `pb` command must be used from the project root.
-
-__Update branch `pb-core` : `pb update`__
-
-On the `pb-core` branch, this command pulls changes of the configured remote branch and pushes them on `origin/pb-core`.
-
-__Merge boilerplate code in your project : `pb merge`__
-
-On the branch targetted by the merge, this command merges `pb-core` in one big commit but doesn't commit. You have to manually commit the changes after running this command.
-
-__Improve Phonegap Boilerplate : `pb push`__
-
-If you have the permission to do so, you can improve Phonegap Boilerplate directly on `pb-core` and push your modifications on both `pb-core (remote)` and `origin` with the command `pb push`.
-Be careful with this command (only use it if you know what you are doing).
+To update Phonegap Boilerplate, you must use the `pb` CLI [available on npm](https://www.npmjs.com/package/phonegap-boilerplate).
