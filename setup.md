@@ -11,7 +11,7 @@
 
 #### Creating a project
 
-use the `pb` CLI to create a project :
+Create both the client and server projects via the `pb` CLI ([available on npm](https://www.npmjs.com/package/phonegap-boilerplate)) :
 
 ```
 pb create
