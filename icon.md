@@ -10,6 +10,8 @@ Then, you can run `make generate-resources`.
 
 All resources are automatically generated, juste use `make build` to build your changes.
 
+__Note :__ Dev dependencies are required.
+
 ### Based on
 
 - [org.apache.cordova.splashscreen](https://github.com/apache/cordova-plugin-splashscreen)
