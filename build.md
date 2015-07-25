@@ -1,6 +1,11 @@
 # Build the app for distribution
 
-### dist file
+### Version number
+
+In Phonegap Boilerplate server, you can set the version number in `./version.json`.
+When a server is running, you can get its version by calling the route `GET /version`.
+
+### Dist file
 
 To reduce the start-up time and the app size, you can build a distribution app file.
 This file (`www/dist/main.js`) is a compilation of all the app files.
