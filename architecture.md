@@ -34,11 +34,11 @@ www
 
 ### 1. Index loading
 
-The index, `www/index.html`, is loaded. The `environment` variable determines the first loaded file :
+The index, `www/index.html`, is loaded. The `useDistFile` variable determines the first loaded file :
 
-- When `environment === 'dev'`, `www/js/app.js` is loaded.
+- When `false`, `www/js/app.js` is loaded.
 
-- In production, the `environment` variable must be set to `dist`, and `www/dist/main.js` is loaded (a compilation of all files, for a faster start-up).
+- In production, the `useDistFile` variable must be set to `true`, and `www/dist/main.js` is loaded (a compilation of all files, for a faster start-up).
 
 ### 2. App start-up (`www/js/app.js`)
 

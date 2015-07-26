@@ -25,10 +25,9 @@ When you want to build a distribution version of your app,
 
 ### Configuration
 
-To make requirejs use your compiled file, change the `window.environment` variable value
-in `www/index.html`, from `"dev"` to `"dist"`.
+To make requirejs use your compiled file, change the `window.useDistFile` variable to `true`.
 
-__Note:__ If `isProductionConfig` is `false` or `window.environment` isn't set to `"dev"`, a warning will be displayed.
+__Note:__ If `isProductionConfig` or `window.useDistFile` are `false`, a warning will be displayed.
 
 ![toast](https://cloud.githubusercontent.com/assets/6225979/8487822/c79f1d60-210e-11e5-9747-1b882a1d6418.png)
 
