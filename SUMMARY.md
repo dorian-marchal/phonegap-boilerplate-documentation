@@ -21,6 +21,7 @@ Documentation of Phonegap Boilerplate : https://github.com/dorian-marchal/phoneg
 - [Add a dependency to your app](dependency.md)
 - [Server API Caching](caching.md)
 - [Build the app for distribution](build.md)
+- [Misc](misc.md)
 - API Documentation
     + [core/AppRouter](api/AppRouter.md)
     + [core/AppController](api/AppController.md)
